@@ -16,7 +16,8 @@ public class Main {
             System.out.println("3. Calculator");
             System.out.println("4. Weight Converter");
             System.out.println("5. Number Guessing Game ");
-            System.out.println("6. Exit");
+            System.out.println("6. Banking Application");
+            System.out.println("7. Exit");
             System.out.print("Enter your choice: ");
 
             if (scanner.hasNextInt()) {
@@ -33,10 +34,11 @@ public class Main {
                 case 3 -> Calculator.main(args);
                 case 4 -> WeightConverter.main(args);
                 case 5 -> GuessTheNumber.main(args);
-                case 6 -> System.out.println("Exiting... Goodbye!");
+                case 6 -> BankingApplication.main(args);
+                case 7 -> System.out.println("Exiting... Goodbye!");
                 default -> System.out.println("Invalid choice. Try again.");
             }
-        } while (choice != 6);
+        } while (choice != 7);
 
         scanner.close();
     }
